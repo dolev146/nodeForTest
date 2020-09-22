@@ -1,0 +1,49 @@
+-- use servers
+
+-- CREATE DATABASE servers
+
+-- CREATE TABLE servers 
+-- (serverID int AUTO_INCREMENT,
+-- serverName VARCHAR(255),
+-- serverIp VARCHAR(255),
+-- HostingName VARCHAR(255),
+-- serverStatus boolean,
+-- serverDatetime  VARCHAR(255),
+-- PRIMARY KEY (serverID))
+
+--  drop table servers
+
+-- CREATE TABLE companies 
+-- (companyID int AUTO_INCREMENT,
+-- companyName VARCHAR(255),
+-- PRIMARY KEY (companyID))
+
+-- INSERT INTO companies VALUES(  1,"Microsoft" );
+-- INSERT INTO companies VALUES(  2,"IBM" );
+-- INSERT INTO companies VALUES(  3,"GoDaddy" );
+-- INSERT INTO companies VALUES(  4,"DigitalO" );
+
+-- select * from companies
+
+-- INSERT INTO servers 
+-- VALUES(  1,"Microsoft_server" , "127.0.0.1", "Microsoft" , true, NOW() );
+
+-- INSERT INTO servers 
+-- VALUES(  2,"IBM_server" , "127.0.0.1", "IBM" , true, NOW() );
+
+-- INSERT INTO servers 
+-- VALUES(  3,"GoDaddy_server" , "127.0.0.1", "GoDaddy" , true, NOW() );
+
+-- INSERT INTO servers 
+-- VALUES(  4,"DigitalIO_server" , "127.0.0.1", "DigitalIO" , true, NOW() );
+
+
+-- i tried to insert the data as a function 
+-- in order to connect between the company name
+-- from the companies table to the servers table but no luck :(
+-- INSERT INTO servers 
+-- VALUES(  4,"DigitalIO_server" , "127.0.0.1", select companyName from companies where companyID = serverID , true, NOW() );
+
+
+-- select * from servers
+
